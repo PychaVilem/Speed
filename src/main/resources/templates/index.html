@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" th:href="@{/styles/mainStyle.css}">
+    <link rel="stylesheet" th:href="@{/styles/navPanelStyle.css}">
 </head>
 <body>
+<div>
+    <div class="nav_panel">
+        <div class="nav_panel_logo">
+            <img th:src="@{/images/logo_SpEEd.png}" alt="logo">
+        </div>
+        <div class="nav_panel_links">
+            <ul>
+                <li>
+                    <a th:href="@{/aboutUs.html}">About Us</a>
+                </li>
+                <li>
+                    <a th:href="@{/profile.html}">login</a>
+                </li>
+                <li>
+                    <a th:href="@{/clientsSites/basket.html}">your basket</a>
+                </li>
+                <li>
+                    <a th:href="@{/contact.html}">your basket</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>

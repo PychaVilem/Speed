@@ -1,0 +1,36 @@
+
+.nav_panel{
+    position: relative;
+}
+.nav_panel_logo img{
+    width: 300px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
+.nav_panel_links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f416c;
+}
+
+.nav_panel_links li {
+    float: left;
+}
+
+.nav_panel_links a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #e47422;
+    font-size: 2.4em;
+}
+
+.nav_panel_links a:hover{
+    background-color: #ddd;
+    color: black;
+}
