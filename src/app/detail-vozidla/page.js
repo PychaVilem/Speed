@@ -6,8 +6,8 @@ export default function carDetails() {
     <div>
       {/* Černá navigační lišta s odkazy na další stránky */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
-        <Link className="navbar-brand" href="#">
-          <img src="/src/main/resources/images/logo_SpEEd.png" alt="main_logo"/>
+           <Link className="navbar-brand" href="#">
+          <img src="/logo_SpEEd.png" alt="main_logo " style={{ height: "40px" }}/>
         </Link>
         <ul className="navbar-nav">
           <li className="nav-item">
@@ -34,7 +34,8 @@ export default function carDetails() {
       </nav>
 
       <div className="container py-5 text-center">
-        <h1>Zvolené vozidlo</h1>
+        <h1 className="display-1 text-primary">spEEd</h1>
+        <h2>Zvolené vozidlo</h2>
         {/* První část s obrázkem uprostřed -> sloupec zarovnaný na prostředek a zabírající polovinu šířky řádku */}
         <div className="row justify-content-center g-4">
           <div className="col-md-6 text-white g-3">

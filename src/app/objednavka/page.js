@@ -5,7 +5,9 @@ export default function Home() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
-          <Link className="navbar-brand" href="#">Speed</Link>
+        <Link className="navbar-brand" href="#">
+          <img src="/logo_SpEEd.png" alt="main_logo " style={{ height: "40px" }}/>
+        </Link>
             <ul className="navbar-nav">
               <li className="nav-item"> <Link className="nav-link" href="/">Domů</Link></li>
               <li className="nav-item"> <Link className="nav-link" href="/kosik">Košík</Link></li>        

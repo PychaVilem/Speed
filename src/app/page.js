@@ -6,8 +6,8 @@ export default function Home() {
     <div>
       {/* Černá navigační lišta s odkazy na další stránky */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
-        <Link className="navbar-brand" href="#">
-          Speed
+            <Link className="navbar-brand" href="#">
+          <img src="/logo_SpEEd.png" alt="main_logo " style={{ height: "40px" }}/>
         </Link>
         <ul className="navbar-nav">
           <li className="nav-item">
