@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* Definice Aeonik fontu (předpokládá soubory v public/fonts) */
+:root {
+  --blue-brand: #87CEEB; /* Nebeská modrá */
+  --gray-brand: #5E5E5D; /* Tvoje šedá */
+  --white: #ffffff;
+}
+
+/* Nastavení celého pozadí na tvou šedou */
+body {
+  background-color: var(--gray-brand) !important;
+  font-family: 'Aeonik', Arial, sans-serif;
+  color: var(--gray-brand);
+  margin: 0;
+  padding: 0;
+}
+
+/* Centrovací kontejner přes celou výšku */
+.min-vh-100 {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- KARTA (FORMULÁŘ) --- */
+.card {
+  background-color: var(--white) !important;
+  border-radius: 0 !important; /* Ostré rohy dle zadání */
+  border: none;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3) !important;
+  padding: 2rem;
+}
+
+/* Nadpis PŘIHLÁŠENÍ */
+.auth-title {
+  font-family: 'Impact', sans-serif;
+  color: var(--gray-brand);
+  font-size: 2.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+/* --- FORMULÁŘOVÉ PRVKY --- */
+.form-label {
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--gray-brand);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border-radius: 0 !important;
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  font-family: 'Aeonik', sans-serif;
+}
+
+.form-control:focus {
+  border-color: var(--blue-brand);
+  box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.2);
+}
+
+/* --- TLAČÍTKO --- */
+.btn-auth {
+  background-color: var(--blue-brand) !important; /* Pouze modrá #87CEEB */
+  color: white;
+  font-family: 'Impact', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  border: none;
+  border-radius: 0;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  text-transform: uppercase;
+}
+
+.btn-auth:hover {
+  background-color: #76bedb !important; /* O něco tmavší modrá při najetí */
+  transform: translateY(-1px);
+}
+
+.btn-auth:active {
+  transform: translateY(0);
+}
+
+/* --- ODKAZ DOLE --- */
+.register-link {
+  color: var(--blue-brand);
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--blue-brand);
+  text-transform: uppercase;
+}
+
+.register-link:hover {
+  color: var(--gray-brand);
+  border-bottom-color: var(--gray-brand);
+}
+
+.text-secondary {
+  color: #a0a0a0 !important;
+}
+.btn-edit-inline {
+  background: transparent;
+  border: none;
+  color: var(--blue-brand); /* Tvoje modrá #87CEEB */
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.btn-edit-inline:hover {
+  color: var(--gray-brand);
+  border-bottom-color: var(--gray-brand);
+}
+
+/* Úprava hodnoty, aby nebyla přes celou šířku a nezasahovala do tlačítka */
+.profile-value {
+  font-family: 'Aeonik', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+/* Jemné zvýraznění řádku při najetí (volitelné) */
+.profile-row:hover {
+  border-bottom-color: var(--blue-brand) !important;
+}

@@ -1,10 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+export default function LoginPage() {
+  return (
+    <div className="row justify-content-center mt-5">
+      <div className="col-md-4">
+        <div className="card shadow">
+          <div className="card-body">
+            <h2 className="card-title text-center mb-4">Přihlášení</h2>
+            
+            <form>
+              <div className="mb-3">
+                <label className="form-label">E-mailová adresa</label>
+                <input 
+                  type="email" 
+                  className="form-control" 
+                  placeholder="jmeno@email.cz" 
+                />
+              </div>
+              
+              <div className="mb-3">
+                <label className="form-label">Heslo</label>
+                <input 
+                  type="password" 
+                  className="form-control" 
+                  placeholder="******" 
+                />
+              </div>
+              
+              <button type="submit" className="btn btn-primary w-100">
+                Přihlásit se
+              </button>
+            </form>
+            
+            <div className="mt-3 text-center">
+              <small>Nemáte účet? <a href="/register">Registrujte se</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
